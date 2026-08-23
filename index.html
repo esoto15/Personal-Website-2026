@@ -58,8 +58,17 @@
             </p>
 
         </section>
-<iframe width="1" height="1" wmode="transparent" src="https://www.youtube.com/embed/ryUG5eVzv-M?list=RDijxk-fgcg7c" title="pastel ghost - iris (slowed + reverb)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<iframe
+    width="1"
+    height="1"
+    id="music"
+    src="https://www.youtube.com/embed/qn2L9M7kfHE?enablejsapi=1&start=18"
+    title="YouTube music"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
 
         <!-- CERTIFICATIONS -->
 
@@ -131,5 +140,15 @@
             <i class="fa-solid fa-envelope"></i>
 
         </div>
+<script>
+    document.addEventListener("click", function () {
+        const iframe = document.getElementById("music");
+
+        iframe.contentWindow.postMessage(
+            '{"event":"command","func":"playVideo","args":""}',
+            "*"
+        );
+    }, { once: true });
+</script>
     </body>
 </html>
