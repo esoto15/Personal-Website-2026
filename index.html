@@ -3,152 +3,561 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" content="Portfolio of Elizabeth Soto, a Chicago Cyber security analyst. View my projects.">
+<title>Elizabeth Soto | Cybersecurity Analyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Elizabeth Soto | Cybersecurity Analyst</title>
-
-    <!-- CSS folder -->
+    <meta name="description"
+        content="Portfolio of Elizabeth Soto, a Chicago cybersecurity analyst specializing in cybersecurity, AI, machine learning, and data analytics.">
+    <title>Elizabeth Soto | Cybersecurity Analyst in Chicago, IL</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
 </head>
 
-    <body>
-        <nav class="navbar">
+<body>
 
-            <div class="nav-logo">
-                Elizabeth Soto
-            </div>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
 
-            <ul class="nav-links">
+        <div class="nav-logo">
+            Elizabeth Soto
+        </div>
 
-                <li><a href="#about">About</a></li>
+        <ul class="nav-links">
 
-                <li><a href="#certifications">Certifications</a></li>
+            <li>
+                <a href="#about">About</a>
+            </li>
 
-                <li><a href="#projects">Projects</a></li>
+            <li>
+                <a href="#terminal">Terminal</a>
+            </li>
 
-                <li><a href="#log">Log</a></li>
+            <li>
+                <a href="#certifications">Certifications</a>
+            </li>
 
-                <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
 
-            </ul>
-        </nav>
+            <li>
+                <a href="#log">Log</a>
+            </li>
 
-        <!-- ABOUT -->
-        <section id="about">
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
 
-            <h2>About Me</h2>
+        </ul>
 
-            <p>
-    I’m a cybersecurity analyst with a strong foundation in machine learning, AI, and data analytics—skills I developed during my Master of Computer Science at Northeastern Illinois University. I’m passionate about applying cutting-edge technologies to solve real-world problems, especially where security, usability, and impact intersect.
+        <!-- MUSIC -->
+        <div class="music-control">
 
-    In a recent project, I developed and deployed a Flask-based web application on Google Cloud Run to gather user preferences on text tone and sentiment. Using machine learning, I modeled text tone to improve classification accuracy while incorporating secure coding practices to protect user data.
-
-    As a Summer Research Student, I designed a methodology to quantify user engagement on social media, using statistical analysis to explore the relationship between sentiment and interaction. I presented insights through clear, data-driven reports, highlighting the value of emotional tone in online behavior.
-
-    Previously, at Ascend Technologies, I contributed to a container optimization project by developing a C# program with Azure services to efficiently manage storage containers. I also prioritized thorough project documentation to support future development.
-
-    My early research explored cultural awareness in web UI design for food security organizations. I created a rubric to evaluate cultural sensitivity based on identified performance indicators—an experience that deepened my interest in inclusive, human-centered technology.
-
-    Now working in cybersecurity, I bring a research-driven mindset, a commitment to secure systems, and a passion for building technology that works—and works well—for people.
-
-            </p>
-
-        </section>
-<iframe
-    width="1"
-    height="1"
-    id="music"
-    src="https://www.youtube.com/embed/qn2L9M7kfHE?enablejsapi=1&start=18"
-    title="YouTube music"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-</iframe>
-
-        <!-- CERTIFICATIONS -->
-
-        <section id="certifications">
-
-            <h2>Certifications</h2>
-
-            <p>Security+</p>
-
-            <div class="progress">
-                <div class="progress-bar" style="width:100%">Completed</div>
-            </div>
-
-            <p>CySA+</p>
-
-            <div class="progress">
-                <div class="progress-bar" style="width:40%">40%</div>
-            </div>
-
-            <p>Certified Ethical Hacker</p>
-
-            <div class="progress">
-                <div class="progress-bar" style="width:25%">25%</div>
-            </div>
-
-        </section>
-
-
-
-        <!-- PROJECTS -->
-
-        <section id="projects">
-
-            <h2>Projects</h2>
-
-            <div class="project">
-
-                <h3>Threat Detection Lab</h3>
-
-                <p>
-                    Built a cybersecurity lab using Kali Linux and vulnerable machines
-                    to simulate attacks and monitor suspicious behavior.
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- CONTACT -->
-
-        <section id="contact">
-
-            <h2>Contact</h2>
-
-            <p>Email: Elizabethsoto458@gmail.com</p>
-
-            <p>GitHub: github.com/esoto15</p>
-
-            <p>LinkedIn: linkedin.com/in/elizabethsoto24/</p>
-
-        </section>
-
-        <div class="social-bar">
-
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-solid fa-envelope"></i>
+            <button id="musicButton">
+                ♫ MUSIC: OFF
+            </button>
 
         </div>
-<script>
-    document.addEventListener("click", function () {
-        const iframe = document.getElementById("music");
 
-        iframe.contentWindow.postMessage(
-            '{"event":"command","func":"playVideo","args":""}',
-            "*"
+    </nav>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I’m a cybersecurity analyst with a strong foundation in machine learning,
+            AI, and data analytics—skills I developed during my Master of Computer
+            Science at Northeastern Illinois University. I’m passionate about applying
+            cutting-edge technologies to solve real-world problems, especially where
+            security, usability, and impact intersect.
+
+            In a recent project, I developed and deployed a Flask-based web application
+            on Google Cloud Run to gather user preferences on text tone and sentiment.
+            Using machine learning, I modeled text tone to improve classification accuracy
+            while incorporating secure coding practices to protect user data.
+
+            As a Summer Research Student, I designed a methodology to quantify user
+            engagement on social media, using statistical analysis to explore the
+            relationship between sentiment and interaction. I presented insights through
+            clear, data-driven reports, highlighting the value of emotional tone in
+            online behavior.
+
+            Previously, at Ascend Technologies, I contributed to a container optimization
+            project by developing a C# program with Azure services to efficiently manage
+            storage containers. I also prioritized thorough project documentation to
+            support future development.
+
+            My early research explored cultural awareness in web UI design for food
+            security organizations. I created a rubric to evaluate cultural sensitivity
+            based on identified performance indicators—an experience that deepened my
+            interest in inclusive, human-centered technology.
+
+            Now working in cybersecurity, I bring a research-driven mindset, a commitment
+            to secure systems, and a passion for building technology that works—and
+            works well—for people.
+        </p>
+
+    </section>
+
+
+    <!-- YOUTUBE MUSIC -->
+    <iframe
+        width="1"
+        height="1"
+        id="music"
+        src="https://www.youtube.com/embed/qn2L9M7kfHE?enablejsapi=1&start=18"
+        title="YouTube music"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+
+
+    <!-- TERMINAL -->
+    <section id="terminal">
+
+        <h2>Terminal</h2>
+
+        <div class="terminal-window">
+
+            <div class="terminal-header">
+
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+
+                <span class="terminal-title">
+                    elizabeth@soto: ~/portfolio
+                </span>
+
+            </div>
+
+
+            <!-- JavaScript will type the content here -->
+            <div
+                class="terminal-body"
+                id="terminalBody">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+
+        <h2>Certifications</h2>
+
+        <p>Security+</p>
+
+        <div class="progress">
+
+            <div
+                class="progress-bar"
+                style="width:100%">
+                Completed
+            </div>
+
+        </div>
+
+
+        <p>CySA+</p>
+
+        <div class="progress">
+
+            <div
+                class="progress-bar"
+                style="width:40%">
+                40%
+            </div>
+
+        </div>
+
+
+        <p>Certified Ethical Hacker</p>
+
+        <div class="progress">
+
+            <div
+                class="progress-bar"
+                style="width:25%">
+                25%
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project">
+
+            <h3>Threat Detection Lab</h3>
+
+            <p>
+                Built a cybersecurity lab using Kali Linux and vulnerable machines
+                to simulate attacks and monitor suspicious behavior.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECURITY LOG -->
+    <section id="log">
+
+        <h2>Security Log</h2>
+
+        <div class="project">
+
+            <p>
+                <span class="prompt">[08.2026]</span>
+                Portfolio deployed.
+            </p>
+
+            <p>
+                <span class="prompt">[08.2026]</span>
+                Cybersecurity portfolio system initialized.
+            </p>
+
+            <p>
+                <span class="prompt">[07.2026]</span>
+                Threat detection lab developed.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:Elizabethsoto458@gmail.com">
+                Elizabethsoto458@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a
+                href="https://github.com/esoto15"
+                target="_blank"
+                rel="noopener noreferrer">
+                github.com/esoto15
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a
+                href="https://www.linkedin.com/in/elizabethsoto24/"
+                target="_blank"
+                rel="noopener noreferrer">
+                linkedin.com/in/elizabethsoto24/
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- SOCIAL ICONS -->
+    <div class="social-bar">
+
+        <a
+            href="https://www.linkedin.com/in/elizabethsoto24/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i class="fa-brands fa-linkedin-in"></i>
+
+        </a>
+
+
+        <a
+            href="https://github.com/esoto15"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i class="fa-brands fa-github"></i>
+
+        </a>
+
+
+        <a href="mailto:Elizabethsoto458@gmail.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        /* =========================
+           MUSIC PLAYER
+        ========================= */
+
+        const musicButton =
+            document.getElementById("musicButton");
+
+        const iframe =
+            document.getElementById("music");
+
+        let playing = false;
+
+
+        musicButton.addEventListener("click", function () {
+
+            if (!playing) {
+
+                iframe.contentWindow.postMessage(
+                    '{"event":"command","func":"setVolume","args":[25]}',
+                    "*"
+                );
+
+                iframe.contentWindow.postMessage(
+                    '{"event":"command","func":"playVideo","args":""}',
+                    "*"
+                );
+
+                musicButton.textContent =
+                    "♫ MUSIC: ON";
+
+                playing = true;
+
+            } else {
+
+                iframe.contentWindow.postMessage(
+                    '{"event":"command","func":"pauseVideo","args":""}',
+                    "*"
+                );
+
+                musicButton.textContent =
+                    "♫ MUSIC: OFF";
+
+                playing = false;
+
+            }
+
+        });
+
+
+        /* =========================
+           TERMINAL TYPING ANIMATION
+        ========================= */
+
+        const terminal =
+            document.getElementById("terminalBody");
+
+
+        const commands = [
+
+            {
+                command: "whoami",
+
+                output: [
+                    "Cybersecurity Analyst"
+                ]
+            },
+
+            {
+                command: "cat interests.txt",
+
+                output: [
+                    "> Cybersecurity",
+                    "> Artificial Intelligence",
+                    "> Machine Learning",
+                    "> Threat Detection",
+                    "> Secure Development",
+                    "> Data Analytics"
+                ]
+            },
+
+            {
+                command: "status",
+
+                output: [
+                    "[ ONLINE ]"
+                ]
+            }
+
+        ];
+
+
+        function typeText(element, text, speed) {
+
+            return new Promise(resolve => {
+
+                let index = 0;
+
+                const interval =
+                    setInterval(() => {
+
+                        element.textContent +=
+                            text[index];
+
+                        index++;
+
+                        if (index >= text.length) {
+
+                            clearInterval(interval);
+
+                            resolve();
+
+                        }
+
+                    }, speed);
+
+            });
+
+        }
+
+
+        async function runTerminal() {
+
+            for (const item of commands) {
+
+                /* COMMAND */
+
+                const commandLine =
+                    document.createElement("p");
+
+                commandLine.innerHTML =
+                    '<span class="prompt">elizabeth@soto:~$ </span>';
+
+                terminal.appendChild(commandLine);
+
+
+                await typeText(
+                    commandLine,
+                    item.command,
+                    45
+                );
+
+
+                /* OUTPUT */
+
+                for (const output of item.output) {
+
+                    const outputLine =
+                        document.createElement("p");
+
+                    outputLine.classList.add(
+                        "terminal-output"
+                    );
+
+                    terminal.appendChild(
+                        outputLine
+                    );
+
+
+                    await typeText(
+                        outputLine,
+                        output,
+                        25
+                    );
+
+                }
+
+
+                /* Pause */
+
+                await new Promise(
+                    resolve =>
+                        setTimeout(resolve, 500)
+                );
+
+            }
+
+
+            /* FINAL PROMPT */
+
+            const finalLine =
+                document.createElement("p");
+
+
+            finalLine.innerHTML =
+                '<span class="prompt">elizabeth@soto:~$ </span>' +
+                '<span class="cursor-blink">█</span>';
+
+
+            terminal.appendChild(
+                finalLine
+            );
+
+        }
+
+
+        /* =========================
+           START TERMINAL WHEN VISIBLE
+        ========================= */
+
+        const terminalSection =
+            document.getElementById("terminal");
+
+        let terminalStarted = false;
+
+
+        const observer =
+            new IntersectionObserver(
+
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (
+                            entry.isIntersecting &&
+                            !terminalStarted
+                        ) {
+
+                            terminalStarted = true;
+
+                            runTerminal();
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.3
+                }
+
+            );
+
+
+        observer.observe(
+            terminalSection
         );
-    }, { once: true });
-</script>
-    </body>
+
+    </script>
+
+</body>
+
 </html>

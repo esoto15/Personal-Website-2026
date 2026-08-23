@@ -1,23 +1,17 @@
-body {
 
-background-color: #0d0d0d;
-color: #e5e5e5;
-font-family: 'Share Tech Mono', monospace;
-
-margin: 0;
-padding: 0;
-cursor: url("/65768.png"), auto;
+* {
+    cursor: url("/65768.png"), auto !important;
 }
 
-
-header {
-text-align: center;
-padding: 40px;
-background: #111;
+body {
+    background-color: #0d0d0d;
+    color: #e5e5e5;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
-
     position: sticky;
     top: 0;
 
@@ -34,18 +28,29 @@ background: #111;
     z-index: 1000;
 }
 
-.nav-links {
+.nav-logo {
+    font-family: "Orbitron", sans-serif;
 
+    color: #9d4edd;
+
+    font-size: 18px;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
     list-style: none;
 
     display: flex;
 
     gap: 25px;
 
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
-
     text-decoration: none;
 
     color: #e5e5e5;
@@ -53,153 +58,440 @@ background: #111;
     font-family: "Share Tech Mono", monospace;
 
     transition: 0.3s;
-
 }
-.nav-links a:hover {
 
+.nav-links a:visited {
+    color: #e5e5e5;
+}
+
+.nav-links a:hover {
     color: #00ff9f;
 
-    text-shadow: 0 0 10px #00ff9f;
-
+    text-shadow:
+        0 0 10px #00ff9f;
 }
 
-.nav-logo {
 
-    font-family: "Orbitron", sans-serif;
+/* =========================
+   MUSIC BUTTON
+========================= */
 
-    color: #9d4edd;
-
-    font-size: 18px;
-
+.music-control {
+    display: flex;
+    align-items: center;
 }
+
+.music-control button {
+    background: #9d4edd;
+
+    border: none;
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 5px;
+
+    font-family: 'Share Tech Mono', monospace;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+
+    cursor: url("/65768.png"), auto !important;
+}
+
+.music-control button:hover {
+    background: #00ff9f;
+
+    color: #000;
+
+    box-shadow:
+        0 0 12px #00ff9f;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
 
 h1 {
+    font-family: 'Orbitron', sans-serif;
 
-font-family: 'Orbitron', sans-serif;
-font-size: 40px;
+    font-size: 40px;
 
-color: #9d4edd;
-
+    color: #9d4edd;
 }
 
-
 h2 {
+    color: #00ff9f;
 
-color: #00ff9f;
+    border-bottom: 2px solid #333;
 
-border-bottom: 2px solid #333;
-padding-bottom: 10px;
+    padding-bottom: 10px;
 
+    text-shadow:
+        0 0 5px rgba(0, 255, 159, 0.3);
 }
 
 h1:hover,
 h2:hover,
 h3:hover {
-    color: #00ff9dd3;
+    color: #00ff9f;
 }
+
+
+/* =========================
+   SECTIONS
+========================= */
+
 section {
+    padding: 40px;
 
-padding: 40px;
-max-width: 900px;
-margin: auto;
+    max-width: 900px;
 
+    margin: auto;
 }
 
 
-button {
+/* =========================
+   LINKS
+========================= */
 
-background: #9d4edd;
-border: none;
+a {
+    color: #00ff9f;
 
-color: white;
+    transition: 0.3s;
+}
 
-padding: 10px 20px;
+a:visited {
+    color: #9d4edd;
+}
 
-cursor: pointer;
+a:hover {
+    color: #00ff9f;
 
-border-radius: 5px;
-
-margin-top: 10px;
-
+    text-shadow:
+        0 0 8px #00ff9f;
 }
 
 
-button:hover {
+/* =========================
+   TERMINAL
+========================= */
 
-background: #00ff9f;
-color: black;
+.terminal-window {
+    background: #080808;
 
+    border: 1px solid #333;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px rgba(0, 255, 159, 0.08),
+        inset 0 0 30px rgba(157, 78, 221, 0.05);
 }
 
 
+/* Terminal Header */
+
+.terminal-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    background: #151515;
+
+    border-bottom: 1px solid #333;
+}
+
+
+/* Terminal Dots */
+
+.terminal-dot {
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
+
+
+/* Terminal Title */
+
+.terminal-title {
+    margin-left: 10px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* Terminal Body */
+
+.terminal-body {
+    padding: 25px;
+
+    font-family: 'Share Tech Mono', monospace;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    min-height: 250px;
+}
+
+
+/* Terminal Prompt */
+
+.prompt {
+    color: #00ff9f;
+
+    text-shadow:
+        0 0 5px #00ff9f;
+}
+
+
+/* Terminal Output */
+
+.terminal-output {
+    color: #e5e5e5;
+
+    margin-left: 20px;
+
+    margin-top: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Online Status */
+
+.status {
+    color: #00ff9f;
+
+    text-shadow:
+        0 0 8px #00ff9f;
+}
+
+
+/* Blinking Terminal Cursor */
+
+.cursor-blink {
+    color: #00ff9f;
+
+    text-shadow:
+        0 0 8px #00ff9f;
+
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   CERTIFICATIONS
+========================= */
 
 .progress {
+    background: #333;
 
-background: #333;
+    border-radius: 20px;
 
-border-radius: 20px;
+    margin-bottom: 20px;
 
-margin-bottom: 20px;
-
+    overflow: hidden;
 }
-
 
 .progress-bar {
+    background:
+        linear-gradient(
+            90deg,
+            #9d4edd,
+            #00ff9f
+        );
 
-background: linear-gradient(90deg,#9d4edd,#00ff9f);
+    padding: 10px;
 
-padding: 10px;
+    border-radius: 20px;
 
-border-radius: 20px;
+    text-align: center;
 
-text-align: center;
+    color: white;
 
-color: white;
-
+    box-sizing: border-box;
 }
 
 
+/* =========================
+   PROJECTS
+========================= */
 
 .project {
+    background: #111;
 
-background: #111;
+    padding: 20px;
 
-padding: 20px;
+    margin-bottom: 20px;
 
-margin-bottom: 20px;
+    border-left: 4px solid #9d4edd;
 
-border-left: 4px solid #9d4edd;
-
+    transition: 0.3s;
 }
 
-.social-bar {
+.project:hover {
+    border-left-color: #00ff9f;
 
+    box-shadow:
+        0 0 15px rgba(0, 255, 159, 0.08);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   SECURITY LOG
+========================= */
+
+#log .project {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#log .prompt {
+    color: #9d4edd;
+
+    text-shadow:
+        0 0 5px #9d4edd;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-bar {
     position: fixed;
 
     bottom: 30px;
+
     left: 20px;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 15px;
 
     z-index: 1000;
-
 }
-.social-bar img {
 
-    width: 30px;
-    height: 30px;
+.social-bar a {
+    color: #e5e5e5;
+
+    text-decoration: none;
+
+    cursor: url("/65768.png"), auto !important;
 
     transition: 0.3s;
-
 }
 
-.social-bar img:hover {
+.social-bar a:visited {
+    color: #e5e5e5;
+}
+
+.social-bar a:hover {
+    color: #00ff9f;
+}
+
+.social-bar i {
+    font-size: 25px;
+
+    transition: 0.3s;
+}
+
+.social-bar a:hover i {
+    color: #00ff9f;
 
     transform: scale(1.2);
 
-    filter: drop-shadow(0 0 8px #00ff9f);
+    text-shadow:
+        0 0 10px #00ff9f;
+}
+
+
+/* =========================
+   RESPONSIVE / MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    .terminal-body {
+        padding: 18px;
+
+        font-size: 13px;
+
+        overflow-x: auto;
+    }
+
+    .music-control {
+        margin-bottom: 5px;
+    }
+
+    .social-bar {
+        bottom: 20px;
+
+        left: 15px;
+    }
 
 }
+```
